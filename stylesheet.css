@@ -1,0 +1,12 @@
+body      { background-color:#FFDEAD;
+    color:#000000;
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-size: 15px; }
+body.impr { background-color:#FFFFFF;
+    color:#000000;
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-size: 15px; }
+titulo    { color:red; font-size:18px; }
+button    { background-color:transparent;
+    border:none;
+    font-size: 16px; }
