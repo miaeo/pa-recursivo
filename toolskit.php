@@ -42,7 +42,7 @@ function escolhachaveestrangeira($tabela,$chaveprim,$campodesc,$chaveestrang,$ce
     }
     printf("</select>\n");
 }
-function iniciapagina($NomeFormTab, $NomeTabBD, $acao){
+function iniciapagina($NomeFormTab, $NomeTabBD, $acao, $bloco){
     #------------------------------------------------------------------
     # Objetivo...: Esta função recebe argumentos para montar as TAGs iniciais das Páginas dos PAs.
     # Parâmetros.: $NomeFormTab - Nome Usual da tabela (Escrito com acentos e Maiús/Minúsculas).
@@ -50,11 +50,13 @@ function iniciapagina($NomeFormTab, $NomeTabBD, $acao){
     # Autoria....: Miranda Honorato
     # Criação....: 16/06/2024
     #------------------------------------------------------------------
+    printf("<!DOCTYPE html>\n");
     printf("<html>\n");
-    printf("<head>\n<title>$NomeFormTab-$acao</title>\n");
-    printf("<link rel='stylesheet' type='text/css' href='./$NomeTabBD.css'\n"); 
-    printf("</head>\n");
-    printf("<body>\n");
+    printf(" <head>\n");
+    printf("  <title>$NomeFormTab-$acao</title>\n");
+    printf("  <link rel='stylesheet' type='text/css' href='../php-projeto-2/$NomeTabBD.css'>\n");
+    printf(" </head>\n");
+    printf(( $acao=='Listar' and $bloco=='3' ) ? " <body class='impr'>\n":" <body>\n");
 }
 function montatabestrut($titulo){
     #------------------------------------------------------------------
