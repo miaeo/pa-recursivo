@@ -88,13 +88,11 @@ function terminapagina($NomeFisTab, $Turno, $NomePA){
     # Objetivo...: Esta função escreve as TAGs que 'termina' a tabela organizadora das páginas dos PAs.
     # Parâmetros.: $NomeFisTab - Nome da Tabela como escrito on BD.
     #              $NomePA - Nome do Arquivo onde está escrito o PA.
-    #              $Turno - Turno no qual o aluno cursa - recebe as Letras 'T' ou 'N'.
     # Autoria....: Miranda Honorato
     # Criação....: 16/06/2024
     #------------------------------------------------------------------
     printf("  <hr>\n");
-    printf( ($Turno=='T')  ? "  <center>$NomeFisTab - &copy; 2024-1 - 4&ordm;ADS-Tarde - $NomePA</center>" :
-                             "  <center>$NomeFisTab - &copy; 2024-1 - 4&ordm;ADS-Noite - $NomePA</center>");
+    printf("<center>$NomeFisTab - &copy; 2024-1 - $NomePA</center>");
     printf(" </body>\n");
     printf("</html>\n");
 }
