@@ -86,5 +86,5 @@ switch(TRUE) {
     }
 }
 
-terminapagina("professores","N", "listar.php");
+terminapagina("professores","listar.php");
 ?>
