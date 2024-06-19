@@ -83,7 +83,7 @@ function desmontatabestrut(){
     printf("</tr>\n");
     printf("</table>\n");
 }
-function terminapagina($NomeFisTab, $Turno, $NomePA){
+function terminapagina($NomeFisTab, $NomePA){
     #------------------------------------------------------------------
     # Objetivo...: Esta função escreve as TAGs que 'termina' a tabela organizadora das páginas dos PAs.
     # Parâmetros.: $NomeFisTab - Nome da Tabela como escrito on BD.
