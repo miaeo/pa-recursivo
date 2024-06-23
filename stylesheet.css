@@ -1,12 +1,170 @@
-body      { background-color:#FFDEAD;
-    color:#000000;
-    font-family: Tahoma, Helvetica, sans-serif;
-    font-size: 15px; }
+body      { background-color:#1B2430;
+    color:#e0e0e0;
+    font-family: 'FreeMono', monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
 body.impr { background-color:#FFFFFF;
     color:#000000;
     font-family: Tahoma, Helvetica, sans-serif;
     font-size: 15px; }
-titulo    { color:red; font-size:18px; }
-button    { background-color:transparent;
-    border:none;
-    font-size: 16px; }
+titulo    { color: #D6D5A8;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550; 
+    text-transform: uppercase;
+}
+button    { background-color:#3e3e3e;
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[formaction*="incluir.php"] {
+    background-color: #494D72;
+}
+
+button[formaction*="incluir.php"]:hover {
+    background-color: #61648f;
+}
+
+button[formaction*="consultar.php"] {
+    background-color: #51557E;
+}
+
+button[formaction*="consultar.php"]:hover {
+    background-color: #6a6b9b;
+}
+
+button[formaction*="alterar.php"] {
+    background-color: #816797;
+}
+
+button[formaction*="alterar.php"]:hover {
+    background-color: #9a83b3;
+}
+
+button[formaction*="excluir.php"] {
+    background-color: #73618F;
+}
+
+button[formaction*="excluir.php"]:hover {
+    background-color: #8c79ab;
+}
+
+button[formaction*="listar.php"] {
+    background-color: #A5969E;
+}
+
+button[formaction*="listar.php"]:hover {
+    background-color: #bfb1ba;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background: #2e2e2e;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: #3e3e3e;
+    color: #ffffff;
+}
+
+td {
+    color: #b0b0b0;
+}
+select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select:hover {
+    background-color: #555;
+}
+
+select:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+select option {
+    background-color: #333;
+    color: #fff;
+}
+
+select option:hover {
+    background-color: #555;
+    color: #fff;
+}
+input[type="text"] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%; 
+    max-width: 600px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+input[type="text"]:hover {
+    background-color: #3e3e3e;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #fff;
+}
+input[type="date"] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    width: auto;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+input[type="date"]:hover {
+    background-color: #3e3e3e;
+}
+
+input[type="date"]:focus {
+    outline: none;
+    border-color: #fff;
+}
